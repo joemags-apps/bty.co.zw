@@ -86,7 +86,7 @@ class Main extends Component
         ];
         $found = false;
         foreach (session('links') as $val) {
-            if($val['short'] == $link->short){
+            if(isset($val['short']) && $val['short'] == $link->short){
                 $found = true;
             }
         }
