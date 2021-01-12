@@ -3,7 +3,7 @@
         <div class="form-row">
             <div class="col-12 col-md-9 mb-2 mb-md-0">
                 <input wire:model.defer="url" type="url" class="form-control form-control-lg"
-                    placeholder="https://my-url" required>
+                    placeholder="https://example.com" required>
 
             </div>
             <div class="col-12 col-md-3">

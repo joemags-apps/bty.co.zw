@@ -9,12 +9,19 @@
 
     <title>{{ env('APP_NAME') }} | URL Shortener</title>
 
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('img/apple-touch-icon.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('img/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('img/favicon-16x16.png') }}">
+    <link rel="manifest" href="{{ asset('img/site.webmanifest') }}">
+
     <link href="{{ asset('vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
 
     <link href="{{ asset('vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet">
     <link href="{{ asset('vendor/simple-line-icons/css/simple-line-icons.css') }}" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href="https:////cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet"
+        type="text/css">
+    <link href="https:////cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet"
+        type="text/css">
     <link href="{{ asset('css/landing-page.css') }}" rel="stylesheet">
     @livewireStyles
 </head>
@@ -23,7 +30,8 @@
 
     <nav class="navbar navbar-light bg-light static-top">
         <div class="container">
-            <a class="navbar-brand" href="{{ url('/') }}">Bty</a>
+            <a class="navbar-brand" href="{{ url('/') }}">
+                <img src="{{ asset('img/logo.png') }}" width="65"></a>
             {{-- <a class="btn btn-primary" href="javascript:;">History</a>
             --}}
         </div>
