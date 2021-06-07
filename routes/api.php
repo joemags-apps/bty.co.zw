@@ -14,3 +14,8 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::group(['middleware' => ['auth:sanctum']], function () {
     Route::post('/short', [ApiController::class, 'short']);
 });
+
+Route::get('test',function (Request $req) {
+    logger($req);
+    return response()->json(['result' => true]);
+});
